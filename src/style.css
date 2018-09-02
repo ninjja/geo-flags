@@ -1,0 +1,29 @@
+.geo-flags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.country,
+.country > div {
+    display: inline-block;
+    width: 20vw;
+    max-width: 200px;
+    min-width: 100px;
+    height: 20vw;
+    min-height: 100px;
+    max-height: 200px;
+}
+.country {
+    margin: 1vw;
+    padding: 1%;
+    background-color: #ccc;
+    box-shadow: 1px 1px 4px -2px black;
+    border-radius: 3px;
+}
+.country > div {
+    -webkit-mask: url(/maps/il/vector.svg) 50% 50% / cover no-repeat;
+    mask: url(/maps/il/vector.svg) 50% 50% / cover no-repeat;
+    background-size: cover !important;
+    background-position: 50% 0%;
+}
